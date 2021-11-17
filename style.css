@@ -1,0 +1,414 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: china;
+  src: url(go3v2.ttf);
+}
+
+@font-face {
+  font-family: japan;
+  src: url(JAPANESE_2020.ttf);
+}
+
+@font-face {
+  font-family: ninja;
+  src: url(NinjaStrike.otf);
+}
+
+/*********header************/
+/*
+header{
+  width: 100vw;
+  min-height: 2rem;
+  max-height: 10rem;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div{
+  background: blue;
+  width: 100%;
+  min-height: 2rem;
+  max-height: 10rem;
+  margin: 5px;
+}
+
+article{
+  background: darkorange;
+  min-width: 90%;
+  max-width: 98%;
+  min-height: 2rem;
+  max-height: 10rem;
+  margin: 5px;
+  display: flex;
+  align-items:  center;
+  justify-content: center;
+}
+
+p{
+  color: white;
+  letter-spacing: 5px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #fff;
+}
+*/
+
+/******mainHeader*******/
+
+.mainHeader {
+  /* background-color: #000000; */
+  background-color: #333;
+  width: 100vw;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+}
+
+.head {
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  margin: 5px;
+}
+
+.logo {
+  background: #fff;
+  min-width: 2rem;
+  min-height: 2rem;
+  max-width: 3rem;
+  max-height: 3rem;
+  box-sizing: border-box;
+  border-radius: 50%;
+  padding: 0.15rem;
+  margin: auto;
+  left: 0.4rem;
+}
+
+.logo img {
+  border-radius: 50%;
+  border: #000 2px solid;
+  width: 100%;
+  height: 100%;
+}
+
+.myName {
+  min-width: 5rem;
+  min-height: 2.5rem;
+  max-width: 6rem;
+  max-height: 4rem;
+  background: transparent;
+  left: 2.8rem;
+  padding: 5px;
+  margin: auto;
+  text-align: center;
+}
+
+.myName P {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  padding: 2px;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.myYTchannel {
+  background: transparent;
+  min-width: 3rem;
+  max-width: 15rem;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border: 2px solid #fff;
+}
+
+.myYTchannel .myYTchannelName {
+  min-width: 2rem;
+  max-width: 14rem;
+  color: #fff;
+}
+
+.myYTchannel .youtube {
+  
+}
+
+.myYTchannel i {
+  color: white;
+  font-size: 5rem;
+  min-width: 1.5rem;
+  max-width: 2rem;
+  background: red;
+}
+
+/*******slidingTabs******/
+
+nav {
+  width: 100vw;
+  min-height: 0rem;
+  max-height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  text-align: center;
+  behavior: scroll;
+}
+
+
+
+nav .subject {
+  min-height: 0rem;
+  max-height: 2rem;
+  width: 100%;
+  /*background: #000;*/
+  background-color: #444;
+  padding: 0.15rem;
+  margin: 0.1rem 0;
+  color: #fff;
+}
+
+/******article******main****paragraph*******/
+
+.notQuotes {
+  min-width: 5rem;
+  max-width: 17rem;
+  min-height: 10rem;
+  max-height: 60rem;
+  background: transparent;
+  margin: 2rem auto;
+  position: relative;
+}
+
+
+.notQuotes .colorBox {
+  background-image: linear-gradient(#000, #fff);
+  min-width: 5rem;
+  max-width: 6rem;
+  min-height: 5rem;
+  max-height: 7rem;
+  position: absolute;
+  border-radius: 1rem;
+  box-shadow: inset 0.2rem 2px 1rem #000;
+  display: none;
+}
+
+.notQuotes .quotes {
+  min-width: 17rem;
+  max-width: 34rem;
+  min-height: 10rem;
+  max-height: 60rem;
+  background: transparent;
+  position: absolute;
+
+  padding: 0.3rem;
+}
+
+
+.notQuotes .colorBox1 {
+  left: -2rem;
+  top: -1.5rem;
+
+}
+
+.notQuotes .colorBox2 {
+  right: -2rem;
+  bottom: -2rem;
+}
+
+.notQuotes .quotes article {
+  /****display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr;*******/
+  background: linear-gradient(#606060, #E2E2E2);
+  display: flex;
+  flex-direction: column;
+  /*****box-shadow: 0rem 0rem 0.6rem #6F6F6F,inset -1px -1px 0.6rem #ddd,inset 0.5px 0.5px 0.6rem #000;*****/
+  border-radius: 0.5rem;
+  border: 0.2px solid #000;
+  box-shadow: 0.1rem 0.1rem 0.3rem #EAEAEB;
+}
+
+.notQuotes .quotes article .PointsOnCoaching {
+  font-size: 0.6rem;
+  font-family: sans-serif;
+  margin-bottom: 0.2rem;
+  margin-left: 0.3rem;
+}
+
+.notQuotes .quotes article .studentInfo {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.7rem;
+}
+
+.notQuotes .quotes article .studentInfo .cardInput {
+  display: flex;
+  flex-direction: column;
+}
+
+.notQuotes .quotes article .studentInfo .cardInput p {
+  width: 6rem;
+  height: 1rem;
+  font-family: sans-serif;
+  margin-left: 0.3rem;
+}
+
+.notQuotes .quotes article .studentInfo Input {
+  width: auto;
+  height: 0.85rem;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom-style: dotted;
+  background: transparent;
+  font-family: sans-serif;
+}
+
+.notQuotes .quotes article .cardHeading {
+  height: 3.2rem;
+  width: 72%;
+  display: flex;
+}
+
+.notQuotes .quotes article .cardHeading h2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.notQuotes .quotes article .cardHeading h2 .coachingLogo {
+  height: 100%;
+  background: transparent;
+  font-family: ninja;
+  font-size: 2.6rem;
+  font-stretch: 2rem;
+  margin-left: 0.2rem;
+}
+
+.notQuotes .quotes article .cardHeading h2 .coachingName {
+  background: transparent;
+  font-size: 1rem;
+  font-family: sans-serif;
+  line-height: 0.9rem;
+  margin-left: 0.8rem;
+  margin-top: 0.3rem;
+}
+
+.notQuotes .quotes article .cardHeading h2 .coachingName .firstPointOnCoaching {
+  font-size: 0.7rem;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+.notQuotes .quotes article .cardHeading h2 .coachingName .mathematicsFont {
+  font-size: 1.1rem;
+
+}
+
+.notQuotes .quotes article .cardHeading .studentPhoto {
+  width: 3.7rem;
+  height: 3.7rem;
+  background: transparent;
+  margin-left: 0.7rem;
+  margin-top: 0.3rem;
+}
+
+.notQuotes .quotes article .cardHeading .studentPhoto img {
+  width: 3.7rem;
+  height: 3.7rem;
+  border: 0.2rem solid #555;
+}
+
+
+.tutorInfo {
+  width: 100%;
+  height: 1.5rem;
+  display: flex;
+  position: relative;
+}
+
+.tutorInfo .tutorMob {
+  font-size: 0.7rem;
+  position: absolute;
+  left: 0.3rem;
+  bottom: 0.3rem;
+  font-family: sans-serif;
+}
+
+.tutorInfo .tutorSign {
+  font-size: 0.5rem;
+  font-family: sans-serif;
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.3rem;
+}
+
+/*****notesPDFbox********/
+
+.notesPDFbox {
+  width: 100vw;
+  min-height: 20rem;
+  max-height: auto;
+  background: #333;
+  margin: auto auto;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.notesPDFbox .Mathematics {
+  min-width: 80%;
+  max-width: 90%;
+  min-height: 20rem;
+  max-height: 35rem;
+  background: #ddd;
+  margin: auto;
+  font-size: 0.7rem;
+  font-family: serif;
+  text-align: center;
+}
+
+
+.notesPDFbox .Mathematics p {
+  border-bottom: 0.2rem solid #444;
+  padding: 0.5rem;
+}
+/**********
+.notesPDFbox .Chemistry {
+  min-width: 80%;
+  max-width: 90%;
+  min-height: 20rem;
+  max-height: 35rem;
+  background: blue;
+}
+*******/
+/*****
+.notesPDFbox .Physics {
+  min-width: 80%;
+  max-width: 90%;
+  min-height: 20rem;
+  max-height: 35rem;
+  background: red;
+}
+
+****/
+
+/******footer****/
+
+footer {
+  height: 100vh;
+  width: 100vw;
+  background: red;
+}
