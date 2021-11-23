@@ -152,6 +152,11 @@ p{
  
 }
 
+.myYTchannel .myYTchannelName a{
+  color: #fff;
+  text-decoration: none;
+}
+
 .myYTchannel .youtube {
   
 }
@@ -454,6 +459,61 @@ nav .subject a {
 }
 
 ****/
+
+/*************HELP***HOW-TO-DOWNLOAD******/
+
+.help{
+  width: 100vw;
+  min-height: 5rem;
+  max-height: 20rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  border: 2px solid #333;
+}
+
+.help .paraDiv{
+  min-height: 4rem;
+  max-height: 6rem;
+  width: 15.2rem;
+  background: #fff;
+  text-align:justify;
+  line-height: 1.95rem;
+  padding: 0.5rem;
+  
+}
+
+.help .paraDiv p{
+  color: #fff;
+  background: #333;
+  padding: 0rem 0.3rem;
+}
+
+.help .paraDiv .p2{
+ font-size: 1rem;
+ font-family: sans-serif ;
+ text-align: center;
+ border-top: 0.1rem solid #fff;
+}
+
+.help .imgDiv{
+  width: 6rem;
+  height: 4rem;
+  background: transparent;
+  position: absolute;
+  right: 0.7rem;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.help img{
+  width: 6rem;
+  height: 4rem;
+  margin: auto;
+  border: 0.2rem solid #333;
+}
 
 /******footer****/
 
