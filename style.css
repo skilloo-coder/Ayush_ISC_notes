@@ -432,12 +432,22 @@ nav .subject a {
   letter-spacing: 0.2rem;
 }
 
+.subjectCard{
+  width: 100%;
+  height: 13rem;
+  background-color: transparent;
+}
+.subjectCard img{
+  width: 100%;
+  height: 12rem;
+}
+
 
 .notesPDFbox .Mathematics p , .Chemistry p{
   border-bottom: 0.2rem solid #333;
   padding: 0.5rem;
   min-height: 2rem;
-  max-height: 5rem;
+  max-height: 20rem;
   width: 100%;
   transition: background-color 0.4s linear;
 }
@@ -459,12 +469,12 @@ nav .subject a {
   color: #FF0000;
 }
 
-.notesPDFbox .Mathematics .chapter6{
+.notesPDFbox .Mathematics .chapter6, .Mathematics .chapter9{
   display: flex;
   flex-direction: column;
 }
 
-.notesPDFbox .Mathematics .chapter6 a{
+.notesPDFbox .Mathematics .chapter6 a , .Mathematics .chapter9 a{
   line-height: 1.2rem;
 }
 /**********
