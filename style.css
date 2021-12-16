@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -102,17 +102,17 @@ p{
   transition: all 1s;
 }
 
-.logo:hover{
+.logo:hover {
   min-width: 10rem;
   min-height: 10rem;
-  transform: translate(6rem , 23rem);
+  transform: translate(6rem, 23rem);
   right: 15rem;
   bottom: 20rem;
   border-radius: 0%;
   box-shadow: 0.4rem 0.4rem 0.35rem #555;
 }
 
-.logo:hover>img{
+.logo:hover>img {
   border-radius: 0%;
 }
 
@@ -165,21 +165,25 @@ p{
   min-width: 2rem;
   max-width: 14rem;
   color: #fff;
- 
+  font-family: 'genos', sans-serif;
+  font-weight: 900;
+
 }
 
-.myYTchannel .myYTchannelName a{
+.myYTchannel .myYTchannelName a {
   color: #fff;
   text-decoration: none;
 }
 
 
-.myYTchannelName i {
-  color: white;
-  font-size: 5rem;
+.myYTchannel i {
+  color: red;
+  font-size: 1.3rem;
   min-width: 1.5rem;
   max-width: 2rem;
-  background: red;
+  background: transparent;
+  text-decoration: none;
+  padding: 1px 4px;
 }
 
 /*******slidingTabs******/
@@ -213,7 +217,7 @@ nav .subject {
 nav .subject a {
   text-decoration: none;
   color: #fff;
-  
+
 }
 
 /******article******main****paragraph*******/
@@ -300,7 +304,7 @@ nav .subject a {
   height: 1rem;
   font-family: sans-serif;
   margin-left: 0.3rem;
-  
+
 }
 
 .notQuotes .quotes article .studentInfo Input {
@@ -330,7 +334,7 @@ nav .subject a {
   height: 100%;
   background: transparent;
   font-family: ninja;
-  font-size: 2.6rem;
+  font-size: 2rem;
   font-stretch: 2rem;
   margin-left: 0.2rem;
 }
@@ -406,7 +410,8 @@ nav .subject a {
   flex-direction: column;
 }
 
-.notesPDFbox .Mathematics , .notesPDFbox .Chemistry{
+.notesPDFbox .Mathematics,
+.notesPDFbox .Chemistry {
   min-width: 80%;
   max-width: 90%;
   min-height: 15rem;
@@ -418,11 +423,11 @@ nav .subject a {
   text-align: center;
 }
 
-.notesPDFbox .Chemistry{
+.notesPDFbox .Chemistry {
   margin-top: 0rem;
 }
 
-.subjectName{
+.subjectName {
   text-align: center;
   color: #fff;
   font-family: cursive;
@@ -432,18 +437,20 @@ nav .subject a {
   letter-spacing: 0.2rem;
 }
 
-.subjectCard{
+.subjectCard {
   width: 100%;
   height: 13rem;
   background-color: transparent;
 }
-.subjectCard img{
+
+.subjectCard img {
   width: 100%;
   height: 12rem;
 }
 
 
-.notesPDFbox .Mathematics p , .Chemistry p{
+.notesPDFbox .Mathematics p,
+.Chemistry p {
   border-bottom: 0.2rem solid #333;
   padding: 0.5rem;
   min-height: 2rem;
@@ -452,31 +459,38 @@ nav .subject a {
   transition: background-color 0.4s linear;
 }
 
-.notesPDFbox .Mathematics p:hover , .Chemistry p:hover{
+.notesPDFbox .Mathematics p:hover,
+.Chemistry p:hover {
   background-color: #222;
   color: #fff;
 }
 
-.notesPDFbox .Mathematics p:hover > a , .Chemistry p:hover > a{
+.notesPDFbox .Mathematics p:hover>a,
+.Chemistry p:hover>a {
   color: #F65EED;
 }
 
-.notesPDFbox .Mathematics p a , .Chemistry p a{
+.notesPDFbox .Mathematics p a,
+.Chemistry p a {
   color: #000EFF;
 }
 
-.notesPDFbox .Mathematics p a:hover , .Chemistry p a:hover{
+.notesPDFbox .Mathematics p a:hover,
+.Chemistry p a:hover {
   color: #FF0000;
 }
 
-.notesPDFbox .Mathematics .chapter6, .Mathematics .chapter9{
+.notesPDFbox .Mathematics .chapter6,
+.Mathematics .chapter9 {
   display: flex;
   flex-direction: column;
 }
 
-.notesPDFbox .Mathematics .chapter6 a , .Mathematics .chapter9 a{
+.notesPDFbox .Mathematics .chapter6 a,
+.Mathematics .chapter9 a {
   line-height: 1.2rem;
 }
+
 /**********
 .notesPDFbox .Chemistry {
   min-width: 80%;
@@ -499,7 +513,7 @@ nav .subject a {
 
 /*************HELP***HOW-TO-DOWNLOAD******/
 
-.help{
+.help {
   width: 100vw;
   min-height: 5rem;
   max-height: 20rem;
@@ -510,31 +524,31 @@ nav .subject a {
   border: 2px solid #333;
 }
 
-.help .paraDiv{
+.help .paraDiv {
   min-height: 4rem;
   max-height: 6rem;
   width: 15.2rem;
   background: #fff;
-  text-align:justify;
+  text-align: justify;
   line-height: 1.95rem;
   padding: 0.5rem;
-  
+
 }
 
-.help .paraDiv p{
+.help .paraDiv p {
   color: #fff;
   background: #333;
   padding: 0rem 0.3rem;
 }
 
-.help .paraDiv .p2{
- font-size: 1rem;
- font-family: sans-serif ;
- text-align: center;
- border-top: 0.1rem solid #fff;
+.help .paraDiv .p2 {
+  font-size: 1rem;
+  font-family: sans-serif;
+  text-align: center;
+  border-top: 0.1rem solid #fff;
 }
 
-.help .imgDiv{
+.help .imgDiv {
   width: 6rem;
   height: 4rem;
   background: transparent;
@@ -545,18 +559,18 @@ nav .subject a {
   transform: translateY(-50%);
 }
 
-.help .imgDiv .playBtn{
+.help .imgDiv .playBtn {
   width: 2.3rem;
   height: 1.7rem;
   background-color: black;
   position: absolute;
-  transform: translate(50% ,50%);
+  transform: translate(50%, 50%);
   right: 50%;
   bottom: 50%;
   color: #fff;
 }
 
-.help .imgDiv img{
+.help .imgDiv img {
   width: 6rem;
   height: 4rem;
   margin: auto;
@@ -564,10 +578,190 @@ nav .subject a {
   position: absolute;
 }
 
-/******footer****/
+/******footer
 
 footer {
   height: 100vh;
   width: 100vw;
   background: red;
+}
+*****/
+
+/*##########footer#########*/
+
+footer main {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: 3rem 6rem 5rem 12rem;
+  background-image: linear-gradient(120deg, #68FAF7 50%, #FFFFFF 50%);
+  box-shadow: inset 0px 0px 4px white;
+}
+
+footer .f-m-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .f-m-about p {
+  text-shadow: 1px 2px 1px #7E8383;
+  font-size: 1.1rem;
+  font-family: cursive;
+}
+
+footer .Friend-image {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer .Friend-image .Rashid-image img,
+.Ayush-image img {
+  border: 2px solid white;
+  box-shadow: .2rem .2rem .13rem #8D8E8E;
+}
+
+footer .Friend-image p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer .f-m-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-2rem);
+}
+
+footer .f-m-links p {
+  text-shadow: 1px 2px 1px #7E8383;
+  font-size: 1.5rem;
+  font-family: cursive;
+}
+
+
+footer img {
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+footer main p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+
+footer main p a{
+  box-shadow: .25rem .35rem .1rem #AEAEAE;
+  border: .1rem solid #E12255A8;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  color:#4A4848 ;
+  background-image: linear-gradient( 120deg, #E12255A8 50%, #FFFFFF 50%);
+  font-size: .9rem;
+  font-family:china;
+  cursor: pointer;
+  margin: .4rem;
+  width: 77px;
+}
+*/
+
+footer .Friend-links {
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer .Friend-links p {
+  font-family: 'cursive', Courier, monospace;
+
+}
+
+footer .Friend-links .Ayush-details .AWC {
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #555;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  font-size: 1rem;
+}
+
+footer .Friend-links p a {
+  box-shadow: .25rem .35rem .1rem #AEAEAE;
+  border: .1rem solid #02A396;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-decoration: none;
+  color: #656363;
+  background-image: linear-gradient(120deg, #68FAF7 50%, #FFFFFF 50%);
+  font-size: .9rem;
+  font-family: china;
+  cursor: pointer;
+  margin: .4rem;
+  width: 77px;
+  padding: 0.4rem 5rem;
+  transition: all .5s;
+}
+
+footer .Friend-links p a:hover {
+  background-image: linear-gradient(120deg, #fff 50%, #68FAF7 50%);
+  letter-spacing: .3rem;
+}
+
+.copyright {
+  min-height: 5rem;
+  max-height: 10rem;
+  min-width: 100vw;
+  max-width: 100vw;
+  background-color: #444;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 .5rem;
+}
+
+.copyright p {
+  min-width: 10rem;
+  max-width: 100%;
+  min-height: 1.5rem;
+  max-height: 5rem;
+  background: transparent;
+  color: #fff;
+  font-size: .8rem;
+}
+
+.copyright p span {
+  color: goldenrod;
+}
+
+.copyright .mediaIcons {
+  min-height: 1rem;
+  max-height: 1.2rem;
+  min-width: 3rem;
+  max-width: 5rem;
+  background: transparent;
+  padding: 0.1rem 1rem;
+  transform: translateY(-0.2rem);
+}
+
+.copyright .mediaIcons ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.copyright .mediaIcons ul li{
+  list-style: none;
+  color: #fff;
+  padding: 0rem .3rem;
+}
+
+.copyright .mediaIcons ul li a{
+  color: #fff;
 }
