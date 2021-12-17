@@ -889,15 +889,19 @@ footer .Friend-links p a:hover {
 }
 
 .fixedIcons ul .faceb{
-  background: #007DF5;
+  background: #006AF5;
 }
 
 .fixedIcons ul .insta {
-  background: #FD28EF;
+  background: #FF14F0;
 }
 
 .fixedIcons ul .twit {
-  background: #36B5FE;
+  background: #25AFFF;
+}
+
+.fixedIcons ul .yout {
+  background: #FF2525;
 }
 
 .fixedIcons ul li a{
