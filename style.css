@@ -855,3 +855,60 @@ footer .Friend-links p a:hover {
 .copyright .mediaIcons ul li a .fa-twitter:hover {
   color: #23A2FF;
 }
+
+
+
+/*********fixedIcons**********/
+
+
+.fixedIcons {
+  background: transparent;
+  width: 8rem;
+  position: fixed;
+  top: 7rem;
+  left: -6.25rem;
+}
+
+.fixedIcons ul{
+  height: 100%;
+}
+
+.fixedIcons ul li {
+  display: flex;
+  align-items: center;
+  background-color: #555;
+  margin: 1px;
+  justify-content: right;
+  list-style: none;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.fixedIcons ul li:hover{
+  transform: translateX(4.5rem);
+}
+
+.fixedIcons ul .faceb{
+  background: #007DF5;
+}
+
+.fixedIcons ul .insta {
+  background: #FD28EF;
+}
+
+.fixedIcons ul .twit {
+  background: #36B5FE;
+}
+
+.fixedIcons ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'poppins',sans-serif;
+  font-weight: 700;
+  font-size: .7rem;
+  color: #fff;
+}
+
+.fixedIcons ul li a i{
+  margin: .3rem .6rem;
+}
