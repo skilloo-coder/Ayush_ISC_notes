@@ -317,6 +317,7 @@ nav .subject a {
   background: transparent;
   font-family: sans-serif;
   color: #444;
+  margin-bottom: 0.1rem;
 }
 
 .notQuotes .quotes article .cardHeading {
@@ -333,8 +334,8 @@ nav .subject a {
 .notQuotes .quotes article .cardHeading h2 .coachingLogo {
   height: 100%;
   background: transparent;
-  font-family: ninja;
-  font-size: 2rem;
+  font-family: 'genos',sans-serif;
+  font-size: 2.3rem;
   font-stretch: 2rem;
   margin-left: 0.2rem;
 }
@@ -428,24 +429,30 @@ nav .subject a {
 }
 
 .subjectName {
+  min-width: 90%;
+  max-width: 90%;
   text-align: center;
   color: #fff;
-  font-family: cursive;
+  font-family: 'genos',sans-serif;
   text-shadow: 2px 2px 2px #000;
   line-height: 2rem;
-  text-decoration: underline;
+  /**text-decoration: ;**/
+  border-bottom: 0.2rem solid #EFF0FF;
   letter-spacing: 0.2rem;
+  background-color: transparent;
+  margin: auto;
+  margin-bottom: .6rem;
 }
 
 .subjectCard {
   width: 100%;
-  height: 13rem;
+  height: auto;
   background-color: transparent;
 }
 
 .subjectCard img {
   width: 100%;
-  height: 12rem;
+  height: auto;
 }
 
 
@@ -635,7 +642,7 @@ footer .f-m-links {
 footer .f-m-links p {
   text-shadow: 1px 2px 1px #7E8383;
   font-size: 1.5rem;
-  font-family: cursive;
+  font-family: 'genos',sans-serif;
 }
 
 
@@ -679,8 +686,8 @@ footer .Friend-links {
 }
 
 footer .Friend-links p {
-  font-family: 'cursive', Courier, monospace;
-
+  font-family: 'genos',sans-serif;
+  font-weight: 600;
 }
 
 footer .Friend-links .Ayush-details .AWC {
@@ -694,6 +701,7 @@ footer .Friend-links .Ayush-details .AWC {
 footer .Friend-links p a {
   box-shadow: .25rem .35rem .1rem #AEAEAE;
   border: .1rem solid #02A396;
+  letter-spacing: 0.1rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -764,4 +772,25 @@ footer .Friend-links p a:hover {
 
 .copyright .mediaIcons ul li a{
   color: #fff;
+}
+
+.copyright .mediaIcons ul li a i {
+  transition: 0.5s;
+}
+
+.copyright .mediaIcons ul li a i:hover{
+  transform: translateY(-0.3rem);
+  -webkit-text-stroke-width: 0.02rem;
+  -webkit-text-stroke-color: #fff;
+}
+
+.copyright .mediaIcons ul li a .fa-facebook-f:hover{
+  color: #015EE4;
+}
+.copyright .mediaIcons ul li a .fa-instagram:hover {
+  color: #DC1FA0;
+   -webkit-text-stroke-width: 0.015rem;
+}
+.copyright .mediaIcons ul li a .fa-twitter:hover {
+  color: #23A2FF;
 }
