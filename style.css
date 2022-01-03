@@ -11,6 +11,14 @@
   box-sizing: border-box;
 }
 
+#preloader{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #fff url(loader.gif) no-repeat center;
+  z-index: 9999;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -81,7 +89,7 @@ p{
   align-items: center;
   position: sticky;
   top: 0;
-  z-index: 99999;
+  z-index: 999;
 }
 
 .head {
@@ -342,6 +350,28 @@ nav .subject a {
   box-shadow: 0.1rem 0.1rem 0.3rem #EAEAEB;
 }
 
+.notQuotes .quotes article .card_background{
+  min-width: 96%;
+  max-width: 97%;
+  min-height: 95%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.5;
+  display: flex;
+  bottom: 0.3rem;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  display: none;
+}
+.notQuotes .quotes article .card_background img{
+  width: 7rem;
+  height: 7rem;
+  position: absolute;
+  bottom: 0;
+  display: none;
+}
+
 .notQuotes .quotes article .PointsOnCoaching {
   font-size: 0.6rem;
   font-family: sans-serif;
@@ -395,19 +425,21 @@ nav .subject a {
 .notQuotes .quotes article .cardHeading h2 .coachingLogo {
   height: 100%;
   background: transparent;
-  font-family: 'genos',sans-serif;
+  font-family: 'poppins',sans-serif;
   font-size: 2.3rem;
   font-stretch: 2rem;
   margin-left: 0.2rem;
+  letter-spacing: .2rem;
 }
 
 .notQuotes .quotes article .cardHeading h2 .coachingName {
   background: transparent;
-  font-size: 0.77rem;
-  font-family: sans-serif;
+  font-size: 0.6rem;
+  font-family: 'poppins',sans-serif;
   line-height: 0.9rem;
   margin-left: 0.8rem;
   margin-top: 0.3rem;
+  font-weight: 600;
 }
 
 .notQuotes .quotes article .cardHeading h2 .coachingName .firstPointOnCoaching {
@@ -417,7 +449,7 @@ nav .subject a {
 }
 
 .notQuotes .quotes article .cardHeading h2 .coachingName .mathematicsFont {
-  font-size: 1.1rem;
+  font-size: .92rem;
 
 }
 
@@ -473,10 +505,11 @@ nav .subject a {
 }
 
 .notesPDFbox .Mathematics,
-.notesPDFbox .Chemistry {
-  min-width: 80%;
+.notesPDFbox .Chemistry,
+.notesPDFbox .Physics{
+  min-width: 90%;
   max-width: 90%;
-  min-height: 15rem;
+  min-height: 5rem;
   max-height: 35rem;
   background: #ddd;
   margin: auto;
@@ -518,7 +551,7 @@ nav .subject a {
 
 
 .notesPDFbox .Mathematics p,
-.Chemistry p {
+.Chemistry p , .Physics p{
   border-bottom: 0.2rem solid #333;
   padding: 0.5rem;
   min-height: 2rem;
@@ -528,23 +561,23 @@ nav .subject a {
 }
 
 .notesPDFbox .Mathematics p:hover,
-.Chemistry p:hover {
+.Chemistry p:hover, .Physics p:hover {
   background-color: #222;
   color: #fff;
 }
 
 .notesPDFbox .Mathematics p:hover>a,
-.Chemistry p:hover>a {
+.Chemistry p:hover>a, .Physics p:hover>a {
   color: #F65EED;
 }
 
 .notesPDFbox .Mathematics p a,
-.Chemistry p a {
+.Chemistry p a, .Physics p a {
   color: #000EFF;
 }
 
 .notesPDFbox .Mathematics p a:hover,
-.Chemistry p a:hover {
+.Chemistry p a:hover , .Physics p a:hover{
   color: #FF0000;
 }
 
@@ -915,4 +948,11 @@ footer .Friend-links p a:hover {
 
 .fixedIcons ul li a i{
   margin: .3rem .6rem;
+}
+/***Test-paper****/
+.testPaper{
+  color: #CA0D3B;
+  font-family: 'poppins', sans-serif;
+  font-weight: 700;
+  word-spacing: 0.2rem;
 }

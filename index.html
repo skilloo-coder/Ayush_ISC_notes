@@ -9,7 +9,9 @@
   <script src="https://kit.fontawesome.com/2cc60cb60c.js" crossorigin="anonymous"></script>
 </head>
 
-<body bgcolor="#fff">
+<body onload="myfun()">
+    <div id="preloader">
+  </div>
   <!----header>
   <div>
     <article>
@@ -30,7 +32,7 @@
       <div class="youtube"><i class="fab fa-youtube"></i></div>
       <!-----i class="fa fa-youtube-play" aria-hidden="true"></i----->
     </div>
-    
+
     <div class="menu">
       <ul>
         <li><a href="#Phy" class="phys">Physics</a></li>
@@ -38,7 +40,7 @@
         <li><a href="#Maths" class="maths">maths</a></li>
       </ul>
     </div>
-    
+
   </header>
   <!-------slidingTabs------->
   <nav>
@@ -51,10 +53,13 @@
     <div class="quotes">
       <!------article----box------>
       <article>
+        <div class="card_background">
+          <img src="instayush.jpg" alt="">
+        </div>
         <div class="cardHeading">
           <h2>
-            <span class="coachingLogo">MSC</span>
-            <span class="coachingName"><span class="mathematicsFont">Mathematics</span> Skilloo Coder Notes
+            <span class="coachingLogo">ISC</span>
+            <span class="coachingName"><span class="mathematicsFont">Intermediate</span> Skilloo Coder Notes
               <span class="firstPointOnCoaching">For- JEE (Main+Adv)</span>
             </span>
           </h2>
@@ -137,7 +142,7 @@
     <div class="subjectCard">
       <img src="jstCard.png" alt="">
     </div>
-    
+
     <!--------notes-Link-Chemistry---------->
     <div class="notes PDF Chemistry">
       <p>Chapter-1 :- Some Basic Concepts of Chemistry</p>
@@ -148,9 +153,25 @@
       <p>
         Chapter-4 :- Chemical Bonding and Molecular Structure
       </p>
+      <p>
+        <span class="testPaper">TEST PAPER </span> [ Chapter 1 - 4 ] <a href="https://adobe.ly/3EjGbuL">Click here to get pdf</a> .
+      </p>
     </div>
     <!--------notes-Link-Physics---------->
+    <a name="Phy"></a>
+    <div class="subjectName">
+      Ultimate Physics
+    </div>
+    <div class="subjectCard">
+      <img src="UltimateCard.png" alt="">
+    </div>
+
+
+
     <div class="notes PDF Physics">
+      <p>
+        Kinematics <a href="https://adobe.ly/3sPu06J">Click here to get pdf</a> .
+      </p>
     </div>
   </div>
   <div class="help">
@@ -224,8 +245,8 @@
       </ul>
     </div>
   </div>
-  
-<div class="fixedIcons">
+
+  <div class="fixedIcons">
     <ul>
       <li class="faceb"><a href="https://bit.ly/33pazqG">facebook<i class="fab fa-facebook-f"></i></a></li>
       <li class="insta"><a href="https://bit.ly/3F0OgWg" target="_ayush">instagram<i class="fab fa-instagram"></i></a></li>
@@ -233,6 +254,8 @@
       <li class="yout"><a href="https://youtube.com/channel/UCAOqAF3qSR1ClroomEl94Bg" target="_ayush">youtube <i class="fab fa-youtube"></i></a></li>
     </ul>
   </div>
+  
+  <script src="main.js"></script>
 </body>
 
 </html>
