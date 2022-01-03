@@ -1,0 +1,958 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos:wght@400;500;600;700;800;900&display=swap');
+/****font-family: 'Genos', sans-serif;****/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+/*****font-family: 'poppins',sans-serif;*****/
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#preloader{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #fff url(loader.gif) no-repeat center;
+  z-index: 9999;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: china;
+  src: url(go3v2.ttf);
+}
+
+@font-face {
+  font-family: japan;
+  src: url(JAPANESE_2020.ttf);
+}
+
+@font-face {
+  font-family: ninja;
+  src: url(NinjaStrike.otf);
+}
+
+/*********header************/
+/*
+header{
+  width: 100vw;
+  min-height: 2rem;
+  max-height: 10rem;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div{
+  background: blue;
+  width: 100%;
+  min-height: 2rem;
+  max-height: 10rem;
+  margin: 5px;
+}
+
+article{
+  background: darkorange;
+  min-width: 90%;
+  max-width: 98%;
+  min-height: 2rem;
+  max-height: 10rem;
+  margin: 5px;
+  display: flex;
+  align-items:  center;
+  justify-content: center;
+}
+
+p{
+  color: white;
+  letter-spacing: 5px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #fff;
+}
+*/
+
+/******mainHeader*******/
+
+.mainHeader {
+  /* background-color: #000000; */
+  background-color: #333;
+  width: 100vw;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.head {
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  margin: 5px;
+}
+
+.logo {
+  background: #fff;
+  min-width: 2rem;
+  min-height: 2rem;
+  max-width: 3rem;
+  max-height: 3rem;
+  box-sizing: border-box;
+  border-radius: 50%;
+  padding: 0.15rem;
+  margin: auto;
+  left: 0.4rem;
+  transition: all 1s;
+}
+
+.logo:hover {
+  min-width: 10rem;
+  min-height: 10rem;
+  transform: translate(6rem, 23rem);
+  right: 15rem;
+  bottom: 20rem;
+  border-radius: 0%;
+  box-shadow: 0.4rem 0.4rem 0.35rem #555;
+}
+
+.logo:hover>img {
+  border-radius: 0%;
+}
+
+.logo img {
+  border-radius: 50%;
+  border: #000 2px solid;
+  width: 100%;
+  height: 100%;
+}
+
+
+.myName {
+  min-width: 3rem;
+  min-height: 2.5rem;
+  max-width: 12rem;
+  max-height: 4rem;
+  background: transparent;
+  left: 2.8rem;
+  padding: 5px;
+  margin: auto;
+  text-align: center;
+}
+
+.myName P {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  padding: 2px;
+  font-size: 1.2rem;
+  border-radius: 0px;
+  border: 0px solid #fff;
+  color: #fff;
+  font-family:  'Poppins',sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  min-width: 13rem;
+  max-width: 15rem;
+  min-height: 1rem;
+  max-height: 2rem;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  background: transparent;
+}
+
+.menu ul{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.menu ul li{
+  list-style: none;
+  font-size: .8rem;
+  font-family: 'poppins',sans-serif;
+  font-weight: 500;
+}
+
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .5s;
+  cursor: pointer;
+  padding: .2rem;
+}
+
+.menu ul li a:hover{
+  text-shadow: 2px 2px #000;
+}
+
+.menu ul li .phys:hover {
+  color: #FDDA3D;
+}
+
+
+.menu ul li .chemi:hover {
+  color: #FF2929;
+}
+
+.menu ul li .maths:hover{
+  color: #3D9DFD;
+}
+
+.myYTchannel {
+  background: transparent;
+  min-width: 3rem;
+  max-width: 15rem;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border: 2px solid #fff;
+  border-radius: 50rem;
+  display: none;
+}
+
+.myYTchannel .myYTchannelName {
+  min-width: 2rem;
+  max-width: 14rem;
+  color: #fff;
+  font-family: 'genos', sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+.myYTchannel .myYTchannelName a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.myYTchannel i {
+  color: red;
+  font-size: 1.3rem;
+  min-width: 1.5rem;
+  max-width: 2rem;
+  background: transparent;
+  text-decoration: none;
+  padding: 1px 4px;
+}
+
+/*******slidingTabs******/
+
+nav {
+  width: 100vw;
+  min-height: 0rem;
+  max-height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  text-align: center;
+  scroll-behavior: smooth;
+  display: none;
+}
+
+
+
+nav .subject {
+  min-height: 0rem;
+  max-height: 2rem;
+  width: 100%;
+  /*background: #000;*/
+  background-color: #444;
+  padding: 0.15rem;
+  margin: 0.1rem 0;
+  color: #fff;
+}
+
+nav .subject a {
+  text-decoration: none;
+  color: #fff;
+
+}
+
+/******article******main****paragraph*******/
+
+.notQuotes {
+  min-width: 5rem;
+  max-width: 17rem;
+  min-height: 10rem;
+  max-height: 60rem;
+  background: transparent;
+  margin: 2rem auto;
+  margin-top: .7rem;
+  position: relative;
+}
+
+
+.notQuotes .colorBox {
+  background-image: linear-gradient(#000, #fff);
+  min-width: 5rem;
+  max-width: 6rem;
+  min-height: 5rem;
+  max-height: 7rem;
+  position: absolute;
+  border-radius: 1rem;
+  box-shadow: inset 0.2rem 2px 1rem #000;
+  display: none;
+}
+
+.notQuotes .quotes {
+  min-width: 17rem;
+  max-width: 34rem;
+  min-height: 10rem;
+  max-height: 60rem;
+  background: transparent;
+  position: absolute;
+
+  padding: 0.3rem;
+}
+
+
+.notQuotes .colorBox1 {
+  left: -2rem;
+  top: -1.5rem;
+
+}
+
+.notQuotes .colorBox2 {
+  right: -2rem;
+  bottom: -2rem;
+}
+
+.notQuotes .quotes article {
+  /****display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr;*******/
+  background: linear-gradient(#606060, #E2E2E2);
+  display: flex;
+  flex-direction: column;
+  /*****box-shadow: 0rem 0rem 0.6rem #6F6F6F,inset -1px -1px 0.6rem #ddd,inset 0.5px 0.5px 0.6rem #000;*****/
+  border-radius: 0.5rem;
+  border: 0.2px solid #000;
+  box-shadow: 0.1rem 0.1rem 0.3rem #EAEAEB;
+}
+
+.notQuotes .quotes article .card_background{
+  min-width: 96%;
+  max-width: 97%;
+  min-height: 95%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.5;
+  display: flex;
+  bottom: 0.3rem;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  display: none;
+}
+.notQuotes .quotes article .card_background img{
+  width: 7rem;
+  height: 7rem;
+  position: absolute;
+  bottom: 0;
+  display: none;
+}
+
+.notQuotes .quotes article .PointsOnCoaching {
+  font-size: 0.6rem;
+  font-family: sans-serif;
+  margin-bottom: 0.2rem;
+  margin-left: 0.3rem;
+}
+
+.notQuotes .quotes article .studentInfo {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.7rem;
+}
+
+.notQuotes .quotes article .studentInfo .cardInput {
+  display: flex;
+  flex-direction: column;
+}
+
+.notQuotes .quotes article .studentInfo .cardInput p {
+  width: 6rem;
+  height: 1rem;
+  font-family: sans-serif;
+  margin-left: 0.3rem;
+
+}
+
+.notQuotes .quotes article .studentInfo Input {
+  width: auto;
+  height: 0.85rem;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom-style: dotted;
+  background: transparent;
+  font-family: sans-serif;
+  color: #444;
+  margin-bottom: 0.1rem;
+}
+
+.notQuotes .quotes article .cardHeading {
+  height: 3.2rem;
+  width: 72%;
+  display: flex;
+}
+
+.notQuotes .quotes article .cardHeading h2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.notQuotes .quotes article .cardHeading h2 .coachingLogo {
+  height: 100%;
+  background: transparent;
+  font-family: 'poppins',sans-serif;
+  font-size: 2.3rem;
+  font-stretch: 2rem;
+  margin-left: 0.2rem;
+  letter-spacing: .2rem;
+}
+
+.notQuotes .quotes article .cardHeading h2 .coachingName {
+  background: transparent;
+  font-size: 0.6rem;
+  font-family: 'poppins',sans-serif;
+  line-height: 0.9rem;
+  margin-left: 0.8rem;
+  margin-top: 0.3rem;
+  font-weight: 600;
+}
+
+.notQuotes .quotes article .cardHeading h2 .coachingName .firstPointOnCoaching {
+  font-size: 0.7rem;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+.notQuotes .quotes article .cardHeading h2 .coachingName .mathematicsFont {
+  font-size: .92rem;
+
+}
+
+.notQuotes .quotes article .cardHeading .studentPhoto {
+  width: 3.7rem;
+  height: 3.7rem;
+  background: transparent;
+  margin-left: 0.7rem;
+  margin-top: 0.3rem;
+}
+
+.notQuotes .quotes article .cardHeading .studentPhoto img {
+  width: 3.7rem;
+  height: 3.7rem;
+  border: 0.2rem solid #555;
+}
+
+
+.tutorInfo {
+  width: 100%;
+  height: 1.5rem;
+  display: flex;
+  position: relative;
+}
+
+.tutorInfo .tutorMob {
+  font-size: 0.7rem;
+  position: absolute;
+  left: 0.3rem;
+  bottom: 0.3rem;
+  font-family: sans-serif;
+}
+
+.tutorInfo .tutorSign {
+  font-size: 0.5rem;
+  font-family: sans-serif;
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.3rem;
+}
+
+/*****notesPDFbox********/
+
+.notesPDFbox {
+  width: 100vw;
+  min-height: 20rem;
+  max-height: auto;
+  background: #333;
+  margin: auto auto;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.notesPDFbox .Mathematics,
+.notesPDFbox .Chemistry,
+.notesPDFbox .Physics{
+  min-width: 90%;
+  max-width: 90%;
+  min-height: 5rem;
+  max-height: 35rem;
+  background: #ddd;
+  margin: auto;
+  font-size: 0.7rem;
+  font-family: serif;
+  text-align: center;
+}
+
+.notesPDFbox .Chemistry {
+  margin-top: 0rem;
+}
+
+.subjectName {
+  min-width: 90%;
+  max-width: 90%;
+  text-align: center;
+  color: #fff;
+  font-family: 'genos',sans-serif;
+  text-shadow: 2px 2px 2px #000;
+  line-height: 2rem;
+  /**text-decoration: ;**/
+  border-bottom: 0.2rem solid #EFF0FF;
+  letter-spacing: 0.2rem;
+  background-color: transparent;
+  margin: auto;
+  margin-bottom: .6rem;
+}
+
+.subjectCard {
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+}
+
+.subjectCard img {
+  width: 100%;
+  height: auto;
+}
+
+
+.notesPDFbox .Mathematics p,
+.Chemistry p , .Physics p{
+  border-bottom: 0.2rem solid #333;
+  padding: 0.5rem;
+  min-height: 2rem;
+  max-height: 20rem;
+  width: 100%;
+  transition: background-color 0.4s linear;
+}
+
+.notesPDFbox .Mathematics p:hover,
+.Chemistry p:hover, .Physics p:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+.notesPDFbox .Mathematics p:hover>a,
+.Chemistry p:hover>a, .Physics p:hover>a {
+  color: #F65EED;
+}
+
+.notesPDFbox .Mathematics p a,
+.Chemistry p a, .Physics p a {
+  color: #000EFF;
+}
+
+.notesPDFbox .Mathematics p a:hover,
+.Chemistry p a:hover , .Physics p a:hover{
+  color: #FF0000;
+}
+
+.notesPDFbox .Mathematics .chapter6,
+.Mathematics .chapter9 {
+  display: flex;
+  flex-direction: column;
+}
+
+.notesPDFbox .Mathematics .chapter6 a,
+.Mathematics .chapter9 a {
+  line-height: 1.2rem;
+}
+
+/**********
+.notesPDFbox .Chemistry {
+  min-width: 80%;
+  max-width: 90%;
+  min-height: 20rem;
+  max-height: 35rem;
+  background: blue;
+}
+*******/
+/*****
+.notesPDFbox .Physics {
+  min-width: 80%;
+  max-width: 90%;
+  min-height: 20rem;
+  max-height: 35rem;
+  background: red;
+}
+
+****/
+
+/*************HELP***HOW-TO-DOWNLOAD******/
+
+.help {
+  width: 100vw;
+  min-height: 5rem;
+  max-height: 20rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  border: 2px solid #333;
+}
+
+.help .paraDiv {
+  min-height: 4rem;
+  max-height: 6rem;
+  width: 15.2rem;
+  background: #fff;
+  text-align: justify;
+  line-height: 1.95rem;
+  padding: 0.5rem;
+
+}
+
+.help .paraDiv p {
+  color: #fff;
+  background: #333;
+  padding: 0rem 0.3rem;
+}
+
+.help .paraDiv .p2 {
+  font-size: 1rem;
+  font-family: sans-serif;
+  text-align: center;
+  border-top: 0.1rem solid #fff;
+}
+
+.help .imgDiv {
+  width: 6rem;
+  height: 4rem;
+  background: transparent;
+  position: absolute;
+  right: 0.7rem;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.help .imgDiv .playBtn {
+  width: 2.3rem;
+  height: 1.7rem;
+  background-color: black;
+  position: absolute;
+  transform: translate(50%, 50%);
+  right: 50%;
+  bottom: 50%;
+  color: #fff;
+}
+
+.help .imgDiv img {
+  width: 6rem;
+  height: 4rem;
+  margin: auto;
+  border: 0.2rem solid #333;
+  position: absolute;
+}
+
+/******footer
+
+footer {
+  height: 100vh;
+  width: 100vw;
+  background: red;
+}
+*****/
+
+/*##########footer#########*/
+
+footer main {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: 3rem 6rem 5rem 12rem;
+  background-image: linear-gradient(120deg, #68FAF7 50%, #FFFFFF 50%);
+  box-shadow: inset 0px 0px 4px white;
+}
+
+footer .f-m-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .f-m-about p {
+  text-shadow: 1px 2px 1px #7E8383;
+  font-size: 1.1rem;
+  font-family: cursive;
+}
+
+footer .Friend-image {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer .Friend-image .Rashid-image img,
+.Ayush-image img {
+  border: 2px solid white;
+  box-shadow: .2rem .2rem .13rem #8D8E8E;
+}
+
+footer .Friend-image p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer .f-m-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-2rem);
+}
+
+footer .f-m-links p {
+  text-shadow: 1px 2px 1px #7E8383;
+  font-size: 1.5rem;
+  font-family: 'genos',sans-serif;
+}
+
+
+footer img {
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+footer main p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+
+footer main p a{
+  box-shadow: .25rem .35rem .1rem #AEAEAE;
+  border: .1rem solid #E12255A8;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  color:#4A4848 ;
+  background-image: linear-gradient( 120deg, #E12255A8 50%, #FFFFFF 50%);
+  font-size: .9rem;
+  font-family:china;
+  cursor: pointer;
+  margin: .4rem;
+  width: 77px;
+}
+*/
+
+footer .Friend-links {
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer .Friend-links p {
+  font-family: 'genos',sans-serif;
+  font-weight: 600;
+}
+
+footer .Friend-links .Ayush-details .AWC {
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #555;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  font-size: 1rem;
+}
+
+footer .Friend-links p a {
+  box-shadow: .25rem .35rem .1rem #AEAEAE;
+  border: .1rem solid #02A396;
+  letter-spacing: 0.1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-decoration: none;
+  color: #656363;
+  background-image: linear-gradient(120deg, #68FAF7 50%, #FFFFFF 50%);
+  font-size: .9rem;
+  font-family: china;
+  cursor: pointer;
+  margin: .4rem;
+  width: 77px;
+  padding: 0.4rem 5rem;
+  transition: all .5s;
+}
+
+footer .Friend-links p a:hover {
+  background-image: linear-gradient(120deg, #fff 50%, #68FAF7 50%);
+  letter-spacing: .3rem;
+}
+
+.copyright {
+  min-height: 5rem;
+  max-height: 10rem;
+  min-width: 100vw;
+  max-width: 100vw;
+  background-color: #444;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 .5rem;
+}
+
+.copyright p {
+  min-width: 10rem;
+  max-width: 100%;
+  min-height: 1.5rem;
+  max-height: 5rem;
+  background: transparent;
+  color: #fff;
+  font-size: .8rem;
+}
+
+.copyright p span {
+  color: goldenrod;
+}
+
+.copyright .mediaIcons {
+  min-height: 1rem;
+  max-height: 1.2rem;
+  min-width: 3rem;
+  max-width: 5rem;
+  background: transparent;
+  padding: 0.1rem 1rem;
+  transform: translateY(-0.2rem);
+}
+
+.copyright .mediaIcons ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.copyright .mediaIcons ul li{
+  list-style: none;
+  color: #fff;
+  padding: 0rem .3rem;
+}
+
+.copyright .mediaIcons ul li a{
+  color: #fff;
+}
+
+.copyright .mediaIcons ul li a i {
+  transition: 0.5s;
+}
+
+.copyright .mediaIcons ul li a i:hover{
+  transform: translateY(-0.3rem);
+  -webkit-text-stroke-width: 0.02rem;
+  -webkit-text-stroke-color: #fff;
+}
+
+.copyright .mediaIcons ul li a .fa-facebook-f:hover{
+  color: #015EE4;
+}
+.copyright .mediaIcons ul li a .fa-instagram:hover {
+  color: #DC1FA0;
+   -webkit-text-stroke-width: 0.015rem;
+}
+.copyright .mediaIcons ul li a .fa-twitter:hover {
+  color: #23A2FF;
+}
+
+
+
+/*********fixedIcons**********/
+
+
+.fixedIcons {
+  background: transparent;
+  width: 8rem;
+  position: fixed;
+  top: 7rem;
+  left: -6.25rem;
+}
+
+.fixedIcons ul{
+  height: 100%;
+}
+
+.fixedIcons ul li {
+  display: flex;
+  align-items: center;
+  background-color: #555;
+  margin: 1px;
+  justify-content: right;
+  list-style: none;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.fixedIcons ul li:hover{
+  transform: translateX(4.5rem);
+}
+
+.fixedIcons ul .faceb{
+  background: #006AF5;
+}
+
+.fixedIcons ul .insta {
+  background: #FF14F0;
+}
+
+.fixedIcons ul .twit {
+  background: #25AFFF;
+}
+
+.fixedIcons ul .yout {
+  background: #FF2525;
+}
+
+.fixedIcons ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'poppins',sans-serif;
+  font-weight: 700;
+  font-size: .7rem;
+  color: #fff;
+}
+
+.fixedIcons ul li a i{
+  margin: .3rem .6rem;
+}
+/***Test-paper****/
+.testPaper{
+  color: #CA0D3B;
+  font-family: 'poppins', sans-serif;
+  font-weight: 700;
+  word-spacing: 0.2rem;
+}
