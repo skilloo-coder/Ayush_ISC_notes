@@ -836,12 +836,13 @@ footer .Friend-links p a:hover {
   background: transparent;
   color: #fff;
   font-size: .8rem;
-  font-family: 'poppins',sans-serif;
 }
 
 .copyright p span {
   color: goldenrod;
 }
+
+
 
 .copyright .mediaIcons {
   min-height: 1rem;
@@ -950,6 +951,31 @@ footer .Friend-links p a:hover {
 .fixedIcons ul li a i{
   margin: .3rem .6rem;
 }
+
+#floating{
+  position: fixed;
+  bottom: 4rem;
+  width: 100vw;
+  background: #444;
+  color: #fff;
+  display:none;
+  font-size: .7rem;
+  font-family: 'poppins',sans-serif;
+}
+
+
+#floating .paragr{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#floating .paragr p a{
+  text-decoration: none;
+  color:#fff;
+}
+
+
 /***Test-paper****/
 .testPaper{
   color: #CA0D3B;
